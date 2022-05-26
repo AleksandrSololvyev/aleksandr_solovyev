@@ -12,14 +12,14 @@ internal class Program
             Random rnd = new Random();
             for (i = 0; i < length; i++)
             {
-                arr[i] = rnd.Next(0, 20);
+                arr[i] = rnd.Next(0, 100);
             }
 
             return arr;
         }
          int GetMinNumber(int[] arr)
         {
-            int min = 0;
+            int min = i;
             for (i = 0; i < arr.Length; i++)
             {
               if (arr[i] < min) min = arr[i];
@@ -28,7 +28,7 @@ internal class Program
         }
         int GetMaxNumber(int[] arr)
         {
-            int max = 0;
+            int max = i;
             for (i = 0; i < arr.Length; i++)
             {
                 if (arr[i] > max) max = arr[i];
